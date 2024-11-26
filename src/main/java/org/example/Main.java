@@ -15,5 +15,6 @@ public class Main {
     PaymentService paymentObject = context.getBean("payment" , PaymentService.class);
 
     paymentObject.makePayment();
+    paymentObject.incrementPayment(5000);
   }
 }
