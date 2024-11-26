@@ -20,7 +20,7 @@
 - It is like a proxy but gives more abilities
 
 For e.g. we use an external API and call its methods. But we want to perform certain actions before or after calling method. Since its a JAR, the methods cannot be injected. So here we use AOP concepts. Before calling the library. I can say call this method M() . We can also provide conditions here. These all things happen on Runtime.
-![AOP Concepts](https://www.javaguides.net/2019/05/understanding-spring-aop-concepts-and-terminology-with-example.html)
+![Spring AOP Diagram](https://example.com/spring-aop-diagram.png)
 
 
 
