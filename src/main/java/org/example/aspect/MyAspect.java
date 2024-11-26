@@ -1,5 +1,6 @@
 package org.example.aspect;
 
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
@@ -9,5 +10,10 @@ public class MyAspect {
   @Before("execution(* org.example.services.PaymentServiceImpl.makePayment())")
   void logStartPayment() {
     System.out.println("Payment Starting...");
+  }
+
+  @After("execution(* org.example.services.PaymentServiceImpl.makePayment())")
+  void logEndPayment() {
+    System.out.println("Payment Ending...");
   }
 }
