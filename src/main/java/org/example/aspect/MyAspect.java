@@ -2,6 +2,7 @@ package org.example.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -40,6 +41,13 @@ public class MyAspect {
     Object result = pointCut.proceed();
     System.out.println("End around Incrementing...");
     return result;
+  }
+
+  @AfterThrowing(pointcut = "execution(* org.example.services.PaymentServiceImpl.throwsException" +
+          "())",
+          throwing="exception")
+  void logException(Throwable exception) {
+    System.out.println("Exception caught: " + exception.getMessage());
   }
 
 

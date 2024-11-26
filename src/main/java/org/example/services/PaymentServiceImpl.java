@@ -26,4 +26,9 @@ public class PaymentServiceImpl implements PaymentService {
 
 
   }
+
+  @Override
+  public void throwsException() throws Throwable {
+    throw new Exception("Exception");
+  }
 }
