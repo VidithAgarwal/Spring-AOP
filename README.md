@@ -20,6 +20,7 @@
 - It is like a proxy but gives more abilities
 
 For e.g. we use an external API and call its methods. But we want to perform certain actions before or after calling method. Since its a JAR, the methods cannot be injected. So here we use AOP concepts. Before calling the library. I can say call this method M() . We can also provide conditions here. These all things happen on Runtime.
+
 ![Spring AOP Diagram](https://private-user-images.githubusercontent.com/72097117/326276785-e5d95ac5-fcd8-4749-8f22-8b82a90f5743.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI2MDQ2NTgsIm5iZiI6MTczMjYwNDM1OCwicGF0aCI6Ii83MjA5NzExNy8zMjYyNzY3ODUtZTVkOTVhYzUtZmNkOC00NzQ5LThmMjItOGI4MmE5MGY1NzQzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI2VDA2NTkxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI1MTE4ZjJiMzJkNGM1ZTFiZDM5ZmVmYTQ4NzNkMjAzYjQwYzljZDNmYTFmMTZhZmNiOWUyMTJjZGQ0NDNiZDImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ch7ACE1WuIMBq8rGnkZ4gmQ-v5xSaLjVfwe1a6UfPXM)
 
 
